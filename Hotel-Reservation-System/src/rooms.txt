@@ -1,0 +1,4 @@
+101,Deluxe,100.0,10.0,false
+102,Suite,150.0,15.0,false
+103,Single,60.0,5.0,false
+104,Double,80.0,8.0,false
