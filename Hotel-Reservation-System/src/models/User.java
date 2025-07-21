@@ -1,3 +1,5 @@
+package models;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -28,7 +30,7 @@ public class User {
         String[] parts = line.split(",", 3);
         User user = new User(parts[0], parts[1]);
         if (parts.length == 3) {
-            String[] history = parts[2].split("\|");
+            String[] history = parts[2].split("\\|");
             for (String h : history) {
                 user.addBooking(h);
             }
