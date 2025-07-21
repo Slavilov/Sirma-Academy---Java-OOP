@@ -1,3 +1,6 @@
+import models.Room;
+import models.User;
+
 import java.io.*;
 import java.util.*;
 
@@ -169,7 +172,7 @@ public class ReservationSystem {
                     for (User user : users) {
                         for (String h : user.getBookingHistory()) {
                             if (h.startsWith("Cancelled")) {
-                                String[] parts = h.split("\$");
+                                String[] parts = h.split("\\$");
                                 cancelFees += Double.parseDouble(parts[1]);
                             }
                         }
